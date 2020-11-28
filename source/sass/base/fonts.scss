@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/helveticaneuecyr.woff2") format("woff2"),
+    url("../fonts/helveticaneuecyr.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/helveticaneuebold.woff2") format("woff2"),
+    url("../fonts/helveticaneuebold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/spacerrotesk.woff2") format("woff2"),
+    url("../fonts/spacerrotesk.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin basic-font($font-size: 12px, $line-height: 20.4px) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $basic-text;
+}
+
+@mixin other-font($font-size: 30px, $line-height: 36px) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 500;
+  color: $basic-white;
+}

@@ -1,0 +1,27 @@
+@mixin size ($width: 20px, $height: 20px) {
+  width: $width;
+  height: $height;
+}
+
+@mixin padding ($padding-left: 20px, $padding-right: 20px) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin pseudo ($width: 10px, $height: 10px, $bgc: red) {
+  content: " ";
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $bgc;
+}

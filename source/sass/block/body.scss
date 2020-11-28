@@ -1,0 +1,30 @@
+.body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+
+  min-width: 240px;
+  @include padding(20px, 20px);
+
+  @include basic-font;
+}
+
+ .body__title {
+  font-family: "Space Grotesk", "Helvetica", sans-serif;
+  text-transform: uppercase;
+
+  @include zero;
+
+  margin-top: 73px;
+  @include other-font;
+}
+
+.body__title-span {
+  display: inline;
+  box-shadow: 15px 0 0 $basic-blue;
+  background-color: $basic-blue;
+}
+
+.body__list {
+  @include zero;
+  margin-top: 45px;
+  list-style: none;
+}

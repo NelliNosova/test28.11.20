@@ -1,0 +1,32 @@
+.people {
+  position: relative;
+}
+
+.people__item {
+  padding-top: 7px;
+  padding-bottom: 48px;
+}
+
+.people__name {
+  @include zero;
+  font-family: "Space Grotesk", "Helvetica", sans-serif;
+  @include basic-font (14px, 19.6px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.people__info {
+  margin-top: 5px;
+}
+
+.people__hours {
+  @include zero;
+  color: $basic-black;
+  font-weight: 700;
+}
+
+.people__description {
+  @include zero;
+  padding-top: 5px;
+  padding-bottom: 18px;
+}
