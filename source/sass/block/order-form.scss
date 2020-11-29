@@ -1,0 +1,55 @@
+.order-form {
+  position: relative;
+}
+
+.order-form__box {
+  position: relative;
+  width: 100%;
+  margin-top: 29px;
+}
+
+.order-form__input {
+  width: 100%;
+  @include padding(10px);
+  font-family: inherit;
+  @include basic-font(14px, 20.4px);
+  color: $basic-black;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $basic-black;
+}
+
+.order-form__label {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  @include basic-font(12px, 20.4px);
+  transition-duration: 0.2s;
+  pointer-events: none;
+}
+
+.order-form__input:hover ~ .order-form__label,
+.order-form__input:focus ~ .order-form__label,
+.order-form__input:valid ~ .order-form__label {
+  font-size: 8px;
+  transform: translateY(-20px);
+}
+
+.order-form__btn {
+  position: relative;
+  @include zero;
+  margin-top: 32px;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  @include basic-font(20px, 22px);
+  color: $basic-black;
+  border: none;
+  border-bottom: 1px solid $basic-black;
+  background-color: transparent
+}
+
+.order-form__btn:hover,
+.order-form__btn:focus {
+  border-bottom: 2px solid $basic-blue;
+  color: $basic-blue;
+}

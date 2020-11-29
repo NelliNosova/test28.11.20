@@ -3,8 +3,15 @@
 }
 
 .people__item {
+  position: relative;
   padding-top: 7px;
   padding-bottom: 48px;
+}
+
+.people__item::before {
+  top: -10px;
+  @include pseudo (100%, 1px, $basic-black);
+  opacity: 0.3;
 }
 
 .people__name {

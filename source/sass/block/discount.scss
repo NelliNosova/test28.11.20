@@ -1,0 +1,17 @@
+.discount {
+  background-color: $basic-yellow;
+  padding: 10px 20px;
+}
+
+.discount__item {
+  @include zero;
+  font-family: "Space Grotesk", sans-serif;
+  @include basic-font(14px, 19.6px);
+  color: $basic-black;
+}
+
+.discount__description {
+  @include zero;
+  padding-top: 6px;
+  @include basic-font(8px, 11.2px);
+}

@@ -1,0 +1,39 @@
+.summary {
+  position: relative;
+  padding: 24px 15px 15px;
+  background-color: $basic-gray;
+}
+
+.summary__title {
+  @include zero;
+  @include basic-font(12px, 20.4px);
+  font-weight: 400;
+}
+
+.summary__price {
+  @include zero;
+  padding-top: 25px;
+  padding-right: 150px;
+  @include basic-font(30px, 30px);
+  color: $basic-black;
+}
+
+.summary__period {
+  @include zero;
+  padding-top: 14px;
+  padding-right: 150px;
+  @include basic-font(16px, 27.2px);
+  color: $basic-black;
+}
+
+.summary__discount {
+  position: absolute;
+  right: 48px;
+  top: 68px;
+  max-width: 105px;
+  min-height: 56px;
+}
+
+.summary__comparison {
+  margin-top: 23px;
+}

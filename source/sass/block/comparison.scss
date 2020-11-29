@@ -1,0 +1,16 @@
+.comparison {
+  position: relative;
+}
+
+.comparison__description {
+  @include zero;
+  @include basic-font(8px, 11.2px);
+}
+
+.comparison__price {
+  @include zero;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  @include basic-font(24px, 40.8px);
+}
+
