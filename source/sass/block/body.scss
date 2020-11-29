@@ -1,10 +1,15 @@
 .body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  min-width: 320px;
 
-  min-width: 240px;
   @include padding;
 
   @include basic-font;
+
+  @media (min-width: $min-tablet) {
+    font-size: 14px;
+    line-height: 23.8px;
+  }
 }
 
  .body__title {
@@ -14,7 +19,13 @@
   @include zero;
 
   margin-top: 73px;
+  
   @include other-font;
+
+  @media (min-width: $min-tablet) {
+    font-size: 48px;
+    line-height: 57.6px;
+  }
 }
 
 .body__title-span {

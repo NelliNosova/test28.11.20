@@ -5,12 +5,23 @@
 .comparison__description {
   @include zero;
   @include basic-font(8px, 11.2px);
+
+  @media (min-width: $min-tablet) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .comparison__price {
   @include zero;
   padding-top: 5px;
   padding-bottom: 5px;
-  @include basic-font(24px, 40.8px);
-}
 
+  @include basic-font(24px, 40.8px);
+  text-decoration: line-through;
+
+  @media (min-width: $min-tablet) {
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+}

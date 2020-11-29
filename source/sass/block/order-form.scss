@@ -5,27 +5,46 @@
 .order-form__box {
   position: relative;
   width: 100%;
-  margin-top: 29px;
+  margin-top: 31px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 33px;
+  }
 }
 
 .order-form__input {
   width: 100%;
+
+  @include zero;
   @include padding(10px);
   font-family: inherit;
+
   @include basic-font(14px, 20.4px);
   color: $basic-black;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $basic-black;
+
+  @media (min-width: $min-tablet) {
+    font-size: 16px;
+    line-height: 25.8px;
+  }
 }
 
 .order-form__label {
   position: absolute;
   top: -5px;
   left: 0;
+
   @include basic-font(12px, 20.4px);
   transition-duration: 0.2s;
   pointer-events: none;
+
+  @media (min-width: $min-tablet) {
+    top: -8px;
+    font-size: 14px;
+    line-height: 23.8px;
+  }
 }
 
 .order-form__input:hover ~ .order-form__label,
@@ -37,15 +56,21 @@
 
 .order-form__btn {
   position: relative;
+
   @include zero;
   margin-top: 32px;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
+  
   @include basic-font(20px, 22px);
   color: $basic-black;
   border: none;
   border-bottom: 1px solid $basic-black;
-  background-color: transparent
+  background-color: transparent;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 17px;
+  }
 }
 
 .order-form__btn:hover,

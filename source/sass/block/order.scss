@@ -1,7 +1,7 @@
 .order {
   position: fixed;
   left: 0;
-  top: 150px;
+  top: 0;
   z-index: 11;
   width: 100%;
   height: 100%;
@@ -11,16 +11,55 @@
 .order__box {
   position: fixed;
   width: 100%;
-  max-width: 566px;
-  height: 336px;
-  top: 153px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+
   @include center;
   @include padding(25px);
   padding-top: 30px;
   background-color: $basic-white;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 160px;
+    display: flex;
+  }
+}
+
+.order__info-box {
+  @media (min-width: $min-tablet) {
+    width: 50%;
+    margin-top: 22px;
+    padding-right: 10px;
+  }
+}
+
+.order__sum-box {
+  @media (min-width: $min-tablet) {
+    width: 50%;
+    margin-top: 22px;
+    padding-left: 10px;
+  }
+}
+
+.order__title {
+  font-family: "Space Grotesk", "Helvetica", sans-serif;
+  text-transform: uppercase;
+
+  @include zero;
+  margin-top: 37px;
+  margin-bottom: 37px;
+
+  @include other-font;
+
+  @media (min-width: $min-tablet) {
+    position: absolute;
+    top: 30px;
+    margin-top: 73px;
+    font-size: 36px;
+    line-height: 43.2px;
+  }
 }
 
 .order__item {
@@ -31,21 +70,36 @@
 .order__details {
   padding-right: 6px;
   font-family: "Space Grotesk", sans-serif;
+
   @include basic-font(14px, 19.6px);
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $min-tablet) {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
 }
 
 .order__description {
   @include zero;
   padding-top: 28px;
+  
   @include basic-font(16px, 27.2px);
 }
 
 .order__summary {
   margin-top: 32px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 12px;
+  }
 }
 
 .order__form {
-  margin-top: 36px;
+  margin-top: 38px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 43px;
+  }
 }

@@ -1,29 +1,57 @@
 .summary {
   position: relative;
+  min-width: 280px;
   padding: 24px 15px 15px;
   background-color: $basic-gray;
+
+  @media (min-width: $min-tablet) {
+    padding: 35px 15px 25px;
+  }
 }
 
 .summary__title {
   @include zero;
   @include basic-font(12px, 20.4px);
   font-weight: 400;
+
+  @media (min-width: $min-tablet) {
+    padding-right: 15px;
+    font-size: 14px;
+    line-height: 23.8px;
+  }
 }
 
 .summary__price {
   @include zero;
   padding-top: 25px;
   padding-right: 150px;
+
   @include basic-font(30px, 30px);
   color: $basic-black;
+
+  @media (max-width: 380px) {
+    font-size: 14px;
+    line-height: 23.8px;
+  }
+
+  @media (min-width: $min-tablet) {
+    padding-top: 20px;
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .summary__period {
   @include zero;
   padding-top: 14px;
   padding-right: 150px;
+  
   @include basic-font(16px, 27.2px);
   color: $basic-black;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 12px;
+  }
 }
 
 .summary__discount {
@@ -32,6 +60,16 @@
   top: 68px;
   max-width: 105px;
   min-height: 56px;
+
+  @media (max-width: 380px) {
+    right: 18px;
+  }
+
+  @media (min-width: $min-tablet) {
+    top: 80px;
+    right: 40px;
+    max-width: 121px;
+  }
 }
 
 .summary__comparison {

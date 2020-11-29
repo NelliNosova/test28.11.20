@@ -1,17 +1,33 @@
 .discount {
   background-color: $basic-yellow;
   padding: 10px 20px;
+
+  @media (min-width: $min-tablet) {
+    padding: 10px 20px 5px 20px;
+  }
 }
 
 .discount__item {
   @include zero;
   font-family: "Space Grotesk", sans-serif;
+
   @include basic-font(14px, 19.6px);
   color: $basic-black;
+
+  @media (min-width: $min-tablet) {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
 }
 
 .discount__description {
   @include zero;
   padding-top: 6px;
+  
   @include basic-font(8px, 11.2px);
+
+  @media (min-width: $min-tablet) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
