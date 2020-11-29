@@ -1,5 +1,11 @@
 .people {
   position: relative;
+
+  @media (min-width: $min-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .people__item {
@@ -10,7 +16,22 @@
   @media (min-width: $min-tablet) {
     display: flex;
     flex-direction: row-reverse;
+    max-width: 704px;
+    @include center;
     padding-bottom: 34px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 49.5%;
+    padding-top: 5px;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+}
+
+.people__item:nth-child(n+3) {
+  @media (min-width: $min-desktop) {
+    flex-direction: row;
   }
 }
 
@@ -18,6 +39,19 @@
   @media (min-width: $min-tablet) {
     width: 50%;
     padding: 20px 0 25px 13px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 23px;
+    padding-left: 20px;
+  }
+}
+
+.people__item:nth-child(n+3) .people__box {
+  @media (min-width: $min-desktop) {
+    padding-left: 0;
+    padding-right: 20px;
+    margin-right: 29px;
   }
 }
 
@@ -30,6 +64,18 @@
     width: 51.5%;
     top: 7px;
     right: -5px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 52.4%;
+    right: 1px;
+    top: 4px;
+  }
+}
+
+.people__item:nth-child(n+3)::before {
+  @media (min-width: $min-desktop) {
+    left: 0;
   }
 }
 
@@ -44,6 +90,11 @@
   @media (min-width: $min-tablet) {
     font-size: 18px;
     line-height: 25.2px;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -60,21 +111,36 @@
   @media (min-width: $min-tablet) {
     margin-top: 22px;
   }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 26px;
+  }
 }
 
 .people__description {
   @include zero;
   padding-top: 5px;
   padding-bottom: 18px;
-  
+
   @media (min-width: $min-tablet) {
     padding-top: 10px;
   }
+}
+
+.people__photo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .people__photo {
   @media (min-width: $min-tablet) {
     width: 343px;
     margin-right: 5px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 294px;
+    margin-right: 17px;
   }
 }

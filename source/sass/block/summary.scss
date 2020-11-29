@@ -7,6 +7,10 @@
   @media (min-width: $min-tablet) {
     padding: 35px 15px 25px;
   }
+
+  @media (min-width: $min-desktop) {
+    padding: 50px 15px 25px 50px;
+  }
 }
 
 .summary__title {
@@ -18,6 +22,11 @@
     padding-right: 15px;
     font-size: 14px;
     line-height: 23.8px;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: 16px;
+    line-height: 27.2px;
   }
 }
 
@@ -39,18 +48,30 @@
     font-size: 32px;
     line-height: 32px;
   }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 31px;
+    font-size: 52px;
+    line-height: 52px;
+  }
 }
 
 .summary__period {
   @include zero;
   padding-top: 14px;
   padding-right: 150px;
-  
+
   @include basic-font(16px, 27.2px);
   color: $basic-black;
 
   @media (min-width: $min-tablet) {
     padding-top: 12px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 15px;
+    font-size: 24px;
+    line-height: 40.8px;
   }
 }
 
@@ -70,8 +91,18 @@
     right: 40px;
     max-width: 121px;
   }
+
+  @media (min-width: $min-desktop) {
+    top: 110px;
+    right: 120px;
+    max-width: 153px;
+  }
 }
 
 .summary__comparison {
   margin-top: 23px;
+
+  @media (min-width: $min-desktop) {
+    margin-top: 48px;
+  }
 }

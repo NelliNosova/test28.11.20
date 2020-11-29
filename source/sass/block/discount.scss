@@ -18,16 +18,26 @@
     font-size: 16px;
     line-height: 22.4px;
   }
+
+  @media (min-width: $min-desktop) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .discount__description {
   @include zero;
   padding-top: 6px;
-  
+
   @include basic-font(8px, 11.2px);
 
   @media (min-width: $min-tablet) {
     font-size: 10px;
     line-height: 14px;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: 14px;
+    line-height: 19.6px;
   }
 }

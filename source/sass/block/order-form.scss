@@ -1,5 +1,11 @@
 .order-form {
-  position: relative;
+  @media (min-width: $min-desktop) {
+    position: absolute;
+    bottom: 0;
+    left: -90%;
+    bottom: 0;
+    width: 87.5%;
+  }
 }
 
 .order-form__box {
@@ -9,6 +15,10 @@
 
   @media (min-width: $min-tablet) {
     margin-top: 33px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 37px;
   }
 }
 
@@ -29,6 +39,10 @@
     font-size: 16px;
     line-height: 25.8px;
   }
+
+  @media (min-width: $min-desktop) {
+    font-size: 20px;
+  }
 }
 
 .order-form__label {
@@ -44,6 +58,12 @@
     top: -8px;
     font-size: 14px;
     line-height: 23.8px;
+  }
+
+  @media (min-width: $min-desktop) {
+    top: -12px;
+    font-size: 16px;
+    line-height: 27.2px;
   }
 }
 
@@ -61,7 +81,7 @@
   margin-top: 32px;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
-  
+
   @include basic-font(20px, 22px);
   color: $basic-black;
   border: none;
@@ -70,6 +90,12 @@
 
   @media (min-width: $min-tablet) {
     margin-top: 17px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 33px;
   }
 }
 

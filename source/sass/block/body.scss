@@ -7,8 +7,15 @@
   @include basic-font;
 
   @media (min-width: $min-tablet) {
+    @include padding(32px);
     font-size: 14px;
     line-height: 23.8px;
+  }
+
+  @media (min-width: $min-desktop) {
+    @include padding(30px);
+    font-size: 16px;
+    line-height: 27.2px;
   }
 }
 
@@ -19,12 +26,18 @@
   @include zero;
 
   margin-top: 73px;
-  
+
   @include other-font;
 
   @media (min-width: $min-tablet) {
     font-size: 48px;
     line-height: 57.6px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 95px;
+    font-size: 72px;
+    line-height: 86.4px;
   }
 }
 
